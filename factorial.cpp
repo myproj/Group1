@@ -1,11 +1,10 @@
+// In Check Branch
+
 #include "functions.h"
 #include<stdio.h>
 int factorial(int n){
-	if(n<=0)
-	{
-		cout<<"Please Re-enter +ve number";
+	if(n<0)
 		return -1;
-	}
     if(n!=1){
 	return(n * factorial(n-1));
     }
