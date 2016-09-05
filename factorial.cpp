@@ -3,7 +3,7 @@
 int factorial(int n){
 	if(n<=0)
 	{
-		cout<<"Please Re-enter +ve number";
+		printf("Please Re-enter +ve number");
 		return -1;
 	}
     if(n!=1){
