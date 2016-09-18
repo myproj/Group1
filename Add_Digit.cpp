@@ -2,7 +2,6 @@
  It prints out the sum of digits in number by calculating remainder
 */
 
-
 #include<stdio.h>
 #include<iostream>
 using namespace std;
@@ -10,11 +9,16 @@ using namespace std;
 int main()
 {
    int n, sum = 0, remainder;
+   bool flag=false;
  
    cout<<"Enter an integer\n";
    cin>>n;
     
-   while(n != 0)
+   if(n<0){
+   		flag = true;
+   		n = -1*n; }
+   	
+   while(n/10 != 0)
    {
       remainder = n % 10;
 	  cout<<"The Remainder is "<<remainder<<"\n";
@@ -23,6 +27,11 @@ int main()
       n = n / 10;
 	  cout<<"The n is "<<n<<"\n";
    }
+   
+   if(flag) 
+   	sum+= (-1*n);
+   else
+   	sum+= n;
  
    cout<<"Sum of digits of entered number = "<<sum<<"\n";
  
