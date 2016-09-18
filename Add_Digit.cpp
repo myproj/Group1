@@ -1,27 +1,23 @@
-// Group 1
-// It prints out the sum of digits in number .
-
 #include<stdio.h>
-#include<iostream>
-
+ 
 int main()
 {
    int n, sum = 0, remainder;
  
-   cout<<"Enter an integer\n";
-   cin>>n;
+   printf("Enter an integer\n");
+   scanf("%d",&n);
     
    while(n != 0)
    {
       remainder = n % 10;
-	  cout<<"The Remainder is "<<remainder<<"\n";
+	  printf("The Remainder is %d\n", remainder);
       sum = sum + remainder;
-	  cout<<"The Sum is "<<sum<<"\n";
+	  printf("The Sum is %d\n", sum);
       n = n / 10;
-	  cout<<"The n is "<<n<<"\n";
+	  printf("The n is %d\n", n);
    }
  
-   cout<<"Sum of digits of entered number = "<<sum<<"\n";
+   printf("Sum of digits of entered number = %d\n",sum);
  
    return 0;
 }
